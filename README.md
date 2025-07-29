@@ -53,9 +53,3 @@ Despite its many advantages, Ansible has some limitations:
 * **Debugging Complexity:** Troubleshooting large or deeply nested playbooks can be less intuitive.
 * **Performance Bottlenecks:** Sequential execution and SSH communication may limit performance at scale.
 * **Windows Support Challenges:** WinRM setup can be complex; some features lag behind Linux support.
-
----
-
-📄 [Download README.md](sandbox:/mnt/data/Configuration_Management_Puppet_vs_Ansible_README.md)
-
-Let me know if you want to add comparison tables, architecture diagrams, or even a quiz section!
