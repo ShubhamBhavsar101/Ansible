@@ -43,6 +43,7 @@ Ansible stands out for its simplicity, agentless nature, and reliance on existin
 * **Dynamic Inventory:** Supports inventory sources like AWS, Azure, GCP, or custom scripts.
 * **Cross-Platform Support:** Works with both Linux/Unix and Windows.
 * **Simple YAML Syntax:** Human-readable playbooks for automation tasks.
+* **Write Your Own Ansible Modules:** Users have the flexibility to develop custom modules in any language (e.g., Python, Ruby, Bash) that can execute on the remote node, extending Ansible's capabilities to precisely fit unique requirements.
 
 ---
 
