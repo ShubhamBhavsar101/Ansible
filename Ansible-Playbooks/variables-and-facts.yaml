@@ -1,0 +1,32 @@
+---
+- name: Variables and Facts Demo
+  hosts: all
+  # connection: local
+  tasks:
+  vars:
+    app_name: "My Web App"
+    app_version: "1.0.0"
+    env: "development"
+    
+  tasks:
+  - name: Display Custom Variables
+    debug:
+      msg: "Deploying {{ app_name }} version {{ app_version }} to {{ env }}"
+  
+  - name: Display System Information
+    debug:
+      msg: "Running on {{ansible_hostname}} with {{ansible_processor_cores}} CPU cores"
+
+  - name: Show OS information
+    debug:
+      msg: "OS: {{ansible_distribution}} {{ansible_distribution_version}}"
+
+  - name: Task for Ubuntu System
+    debug:
+      msg: "This is an Ubuntu system"
+    when: ansible_distribution == "Ubuntu"
+    
+  - name: Task for Systems with more than 2 CPU cores
+    debug:
+      msg: "This system has so many cores."
+    when: ansible_processor_cores > 2

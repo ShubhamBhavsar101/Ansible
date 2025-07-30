@@ -1,0 +1,8 @@
+---
+- name: Print Hello World
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: Print hello message
+    debug:
+      msg: "Hello, Ansible!"
