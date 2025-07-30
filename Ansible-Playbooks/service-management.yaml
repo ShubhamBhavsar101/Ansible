@@ -1,0 +1,16 @@
+---
+- name: Service Management
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install nginx and Java
+      apt:
+        name: 
+          - nginx
+          - openjdk-17-jre
+        state: present
+    - name: Enable Nginx at system start
+      service:
+        name: nginx
+        state: started
+        enabled: yes
